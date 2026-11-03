@@ -1,4 +1,4 @@
-# PREPARATION ONLY: replace FULL_REVIEWED_ACTION_COMMIT_SHA with the final hosted-qualified destination SHA before use.
+# Qualified immutable Action reference. Repository-owner review is required before installation.
 # Install as .github/workflows/patchwrk.yml only after reviewing repository policy.
 name: PatchWRK Free Scanner
 on:
@@ -24,6 +24,6 @@ jobs:
           submodules: false
           lfs: false
       - id: patchwrk
-        uses: patchwrk-dev/patchwrk-action@FULL_REVIEWED_ACTION_COMMIT_SHA
+        uses: patchwrk-dev/patchwrk-action@4f7aa523e0bd9038f0d1a6144cbda50b571f25e3
         with:
           path: '.'

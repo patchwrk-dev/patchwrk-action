@@ -5,19 +5,16 @@ compatibility risks against a limited historical catalog. Scanner reads code wit
 executing or changing it, fetching provider updates or uploading source to PatchWRK.
 No PatchWRK account or API credential is needed.
 
-**Local repository candidate for `patchwrk-dev/patchwrk-action`; not published or
-hosted-qualified at this location.** The example SHA placeholder must be replaced
-with the final qualified destination commit before installation. Existing working
-[Action v0.1.0 installation instructions](https://github.com/patchwrk-dev/patchwrk-scanner/releases/download/action-v0.1.0/GITHUB_ACTION_USAGE.md)
-remain available for the original repository/subdirectory SHA.
+**Available by immutable SHA from `patchwrk-dev/patchwrk-action`.** Hosted
+qualification passed on November 3, 2026 for the supported scope below. A GitHub
+Marketplace listing and v0.1.0 release are being prepared; neither is published yet.
 
-## Install after the new location is qualified
+## Install with the qualified commit
 
 Create `.github/workflows/patchwrk.yml` in your authorized public repository.
-Replace `FULL_REVIEWED_ACTION_COMMIT_SHA` with the actual 40-character released and
-hosted-qualified commit of **patchwrk-dev/patchwrk-action**, not the old repository
-SHA. Review the workflow, commit it to default `main`, then run it manually or push
-to main. This candidate does not authorize any workflow run.
+The example pins the exact hosted-qualified Action commit. Review the workflow,
+commit it to default `main`, then run it manually or push to main. GitHub account
+permissions and repository-owner approval are required for workflow changes/runs.
 
 ```yaml
 name: PatchWRK Free Scanner
@@ -44,7 +41,7 @@ jobs:
           submodules: false
           lfs: false
       - id: patchwrk
-        uses: patchwrk-dev/patchwrk-action@FULL_REVIEWED_ACTION_COMMIT_SHA
+        uses: patchwrk-dev/patchwrk-action@4f7aa523e0bd9038f0d1a6144cbda50b571f25e3
         with:
           path: '.'
 ```
@@ -52,13 +49,14 @@ jobs:
 No source clone, project dependency installation, npm package, Docker image or build
 is required by Scanner. GitHub retrieves the bundled Action. `runs.using: node24`
 selects the Action runtime; system Node is not an alternative to this runtime.
-The old location was qualified on standard GitHub-hosted **ubuntu-24.04 / Linux x64 /
-Node24** (observed 24.22.1), in public GitHub.com repositories. The new location must
-pass the same bounded event matrix before making equivalent support claims.
+This exact repository/commit was qualified on standard GitHub-hosted **ubuntu-24.04 /
+Linux x64 / Node24** (observed 24.22.1), in public GitHub.com repositories. Producer
+contracts and consumer push, default-main manual dispatch, same-repository PR opened
+and founder-owned fork PR opened all passed. [Qualification provenance](PROVENANCE.json).
 
 Private repos, GHES, self-hosted/container/macOS/Windows/ARM runners and additional
 PR events remain unqualified. Main push, default-main manual dispatch and PR opened
-are the intended event scope. The prior fork run used a founder-owned fork; it does
+are the qualified event scope. The fork run used a founder-owned fork; it does
 not prove every first-time/outside-contributor approval policy. GitHub-hosted scans
 process your checkout and logs on GitHub infrastructure; installation and checkout
 use network. GitHub runner costs depend on your account allowance and policy.
@@ -106,7 +104,8 @@ logs/reports in public Issues.
 
 Recommended usage is a full immutable destination commit SHA. Proposed first release
 is **v0.1.0 in the new repository**, not a replacement of the original action-v0.1.0.
-No tag or commit exists here yet. Version tags are convenient labels and can be
+The pinned commit is available; no version tag or release is published yet. Version
+tags are convenient labels and can be
 mutable; never overwrite/reuse published tags or assets. No floating v1 alias is
 planned. Updates require a reviewed new SHA, byte/source/license mapping, focused
 checks and an explicit workflow pin change. No silent or automatic update promise.
@@ -122,7 +121,7 @@ For an incident, disable/remove the scan job while preserving relevant private
 evidence. If appropriate after review, use the prior qualified original reference:
 `patchwrk-dev/patchwrk-scanner/action@542affc4913b5c3ee55b506470f36dc0304b17fb`.
 That old SHA belongs to the old repo path; it is not a destination SHA. No previous
-release in this proposed new repository is established as a rollback. A corrective
+release in this dedicated repository is established as a rollback. A corrective
 release or listing withdrawal needs owner review; removing a listing cannot retract
 cached/downloaded code.
 
