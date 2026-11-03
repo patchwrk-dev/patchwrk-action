@@ -1,0 +1,29 @@
+# PREPARATION ONLY: replace FULL_REVIEWED_ACTION_COMMIT_SHA with the final hosted-qualified destination SHA before use.
+# Install as .github/workflows/patchwrk.yml only after reviewing repository policy.
+name: PatchWRK Free Scanner
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: patchwrk-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  scan:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+          submodules: false
+          lfs: false
+      - id: patchwrk
+        uses: patchwrk-dev/patchwrk-action@FULL_REVIEWED_ACTION_COMMIT_SHA
+        with:
+          path: '.'

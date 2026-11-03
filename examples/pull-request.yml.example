@@ -1,0 +1,29 @@
+# PREPARATION ONLY: replace FULL_REVIEWED_ACTION_COMMIT_SHA with the final hosted-qualified destination SHA before use.
+# Initial qualified event scope: PR opened to main. Preserve fork approval policy.
+name: PatchWRK read-only PR scan
+on:
+  pull_request:
+    branches: [main]
+    types: [opened]
+permissions:
+  contents: read
+concurrency:
+  group: patchwrk-pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+          submodules: false
+          lfs: false
+      # Remote reviewed implementation; no PR-local Action, script, install or build.
+      - id: patchwrk
+        uses: patchwrk-dev/patchwrk-action@FULL_REVIEWED_ACTION_COMMIT_SHA
+        with:
+          path: '.'
