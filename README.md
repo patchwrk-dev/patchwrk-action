@@ -6,8 +6,10 @@ executing or changing it, fetching provider updates or uploading source to Patch
 No PatchWRK account or API credential is needed.
 
 **Available by immutable SHA from `patchwrk-dev/patchwrk-action`.** Hosted
-qualification passed on November 3, 2026 for the supported scope below. A GitHub
-Marketplace listing and v0.1.0 release are being prepared; neither is published yet.
+qualification passed on November 3, 2026 for the supported scope below.
+[GitHub Marketplace](https://github.com/marketplace/actions/patchwrk-free-scanner)
+and the [v0.1.0 release](https://github.com/patchwrk-dev/patchwrk-action/releases/tag/v0.1.0)
+are available.
 
 ## Install with the qualified commit
 
@@ -102,11 +104,11 @@ logs/reports in public Issues.
 
 ## Versions, source, updates and rollback
 
-Recommended usage is a full immutable destination commit SHA. Proposed first release
-is **v0.1.0 in the new repository**, not a replacement of the original action-v0.1.0.
-The pinned commit is available; no version tag or release is published yet. Version
-tags are convenient labels and can be
-mutable; never overwrite/reuse published tags or assets. No floating v1 alias is
+Recommended usage is a full immutable destination commit SHA. The first release
+is **v0.1.0 in this dedicated repository**, separate from the original action-v0.1.0.
+The published tag points to `09f384666781fc53839aecbffa927ba21a8db103`;
+workflow examples retain the directly hosted-qualified `4f7aa523e0bd9038f0d1a6144cbda50b571f25e3` pin.
+Version tags are convenient labels and can be mutable; never overwrite/reuse published tags or assets. No floating v1 alias is
 planned. Updates require a reviewed new SHA, byte/source/license mapping, focused
 checks and an explicit workflow pin change. No silent or automatic update promise.
 
