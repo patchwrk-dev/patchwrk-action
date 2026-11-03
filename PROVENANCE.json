@@ -1,5 +1,5 @@
 {
-  "releaseVersion": "v0.1.0 proposed; not reserved or published",
+  "releaseVersion": "v0.1.0",
   "qualifiedActionCommit": "4f7aa523e0bd9038f0d1a6144cbda50b571f25e3",
   "actionSubdirectory": ".",
   "metadata": "action.yml",
@@ -39,7 +39,7 @@
     "branding search/blue"
   ],
   "repository": "patchwrk-dev/patchwrk-action",
-  "distributionState": "Public immutable SHA qualified; Marketplace listing and v0.1.0 release not yet published",
+  "distributionState": "Public GitHub Marketplace v0.1.0 release; workflow examples retain the directly hosted-qualified commit",
   "originalActionCommit": "542affc4913b5c3ee55b506470f36dc0304b17fb",
   "originalProducerRun": "https://github.com/patchwrk-dev/patchwrk-scanner/actions/runs/41482543677",
   "originalConsumerRuns": [
@@ -49,5 +49,5 @@
     "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41496065160"
   ],
   "qualificationScope": "Five executed jobs: producer plus consumer main push, default-main manual dispatch, same-repository PR opened and founder-owned fork PR opened. Broader fork-approval policies are unqualified.",
-  "documentationRevision": "Examples pin the directly hosted-tested commit; later docs-only release commit must map unchanged metadata/runtime to this evidence."
+  "documentationRevision": "v0.1.0 tags 09f384666781fc53839aecbffa927ba21a8db103, whose metadata/runtime bytes match directly hosted-tested 4f7aa523e0bd9038f0d1a6144cbda50b571f25e3; examples retain the tested pin."
 }

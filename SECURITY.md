@@ -1,14 +1,14 @@
 # Security — PatchWRK Free Scanner Action
 
 The dedicated Action at commit 4f7aa523e0bd9038f0d1a6144cbda50b571f25e3 passed
-hosted qualification on November 3, 2026. Marketplace listing/release preparation
-is separate. Support is best effort, no guaranteed response/backport/SLA.
+hosted qualification on November 3, 2026. The v0.1.0 release is available on GitHub
+Marketplace. Support is best effort, no guaranteed response/backport/SLA.
 
 Use the existing [confidential reporting process](https://github.com/patchwrk-dev/patchwrk-scanner/blob/main/SECURITY.md)
 and [private vulnerability reporting](https://github.com/patchwrk-dev/patchwrk-scanner/security/advisories/new)
 in the Scanner repository, or security@patchwrk.dev. Do not report vulnerabilities
-in public Issues. This candidate does not establish private reporting settings in a
-new repository or verify current email forwarding. Agree secure transfer before
+in public Issues. This policy does not establish private reporting settings in this
+repository or verify current email forwarding. Agree secure transfer before
 sensitive details; never attach credentials, private source or raw sensitive reports.
 
 Report full Action reference/hash, runner/runtime, impact and a synthetic reproduction.
