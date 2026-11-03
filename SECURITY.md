@@ -1,8 +1,8 @@
 # Security — PatchWRK Free Scanner Action
 
-This local distribution candidate has not been published or hosted-qualified at
-patchwrk-dev/patchwrk-action. Previous qualification applies to the original pinned
-Action repository path. Support is best effort, no guaranteed response/backport/SLA.
+The dedicated Action at commit 4f7aa523e0bd9038f0d1a6144cbda50b571f25e3 passed
+hosted qualification on November 3, 2026. Marketplace listing/release preparation
+is separate. Support is best effort, no guaranteed response/backport/SLA.
 
 Use the existing [confidential reporting process](https://github.com/patchwrk-dev/patchwrk-scanner/blob/main/SECURITY.md)
 and [private vulnerability reporting](https://github.com/patchwrk-dev/patchwrk-scanner/security/advisories/new)
@@ -12,7 +12,7 @@ new repository or verify current email forwarding. Agree secure transfer before
 sensitive details; never attach credentials, private source or raw sensitive reports.
 
 Report full Action reference/hash, runner/runtime, impact and a synthetic reproduction.
-The intended support scope is public GitHub.com / standard Ubuntu24.04 Linux x64 /
+The qualified support scope is public GitHub.com / standard Ubuntu24.04 Linux x64 /
 Node24. Do not execute scanned code, install target dependencies or configure
 privileged PR events/secrets/writes. Preserve read-only permissions and fork approval
 policy. Workflows must consume trusted remote immutable code and only trusted-base

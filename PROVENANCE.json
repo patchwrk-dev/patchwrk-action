@@ -1,6 +1,6 @@
 {
   "releaseVersion": "v0.1.0 proposed; not reserved or published",
-  "qualifiedActionCommit": "542affc4913b5c3ee55b506470f36dc0304b17fb",
+  "qualifiedActionCommit": "4f7aa523e0bd9038f0d1a6144cbda50b571f25e3",
   "actionSubdirectory": ".",
   "metadata": "action.yml",
   "using": "node24",
@@ -11,7 +11,7 @@
     "result.mjs": "02aa6dac30277110a2435b8928d1c96be4ab9f623f0d202a25b0157f44a4b9db",
     "catalog.json": "1b61c48f215c9e77a5972f302f667fb9522fab42a97cba104b42e0709601ce19"
   },
-  "qualificationDate": "2026-11-02",
+  "qualificationDate": "2026-11-03",
   "supportedScope": {
     "repository": "public GitHub.com",
     "runner": "standard ubuntu-24.04 Linux x64",
@@ -23,17 +23,14 @@
       "pull_request opened reviewed founder-owned fork"
     ]
   },
-  "producerRun": "https://github.com/patchwrk-dev/patchwrk-scanner/actions/runs/41482543677",
+  "producerRun": "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41680074847",
   "consumerRuns": [
-    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41493294091",
-    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41494009121",
-    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41494350564",
-    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41496065160"
+    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41680074847",
+    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41681318376",
+    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41681718969",
+    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41682291983"
   ],
-  "archivedMetadata": "Source README and private 0.1.0-local tooling label are historical qualification snapshot metadata; final release guide supplies current status",
   "sourceCodeChanged": false,
-  "candidateRepository": "patchwrk-dev/patchwrk-action",
-  "candidateState": "local preparation only; repository not created; relocated hosted tests pending",
   "runtimeSourceSubdirectory": "action",
   "sourceURL": "https://github.com/patchwrk-dev/patchwrk-scanner/tree/542affc4913b5c3ee55b506470f36dc0304b17fb/action",
   "metadataChanges": [
@@ -41,5 +38,16 @@
     "author Jovan Simon",
     "branding search/blue"
   ],
-  "qualificationScope": "Existing hosted evidence applies to the old repository ref; new remote location unqualified."
+  "repository": "patchwrk-dev/patchwrk-action",
+  "distributionState": "Public immutable SHA qualified; Marketplace listing and v0.1.0 release not yet published",
+  "originalActionCommit": "542affc4913b5c3ee55b506470f36dc0304b17fb",
+  "originalProducerRun": "https://github.com/patchwrk-dev/patchwrk-scanner/actions/runs/41482543677",
+  "originalConsumerRuns": [
+    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41493294091",
+    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41494009121",
+    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41494350564",
+    "https://github.com/patchwrk-dev/patchwrk-scanner-action-consumer-test/actions/runs/41496065160"
+  ],
+  "qualificationScope": "Five executed jobs: producer plus consumer main push, default-main manual dispatch, same-repository PR opened and founder-owned fork PR opened. Broader fork-approval policies are unqualified.",
+  "documentationRevision": "Examples pin the directly hosted-tested commit; later docs-only release commit must map unchanged metadata/runtime to this evidence."
 }
