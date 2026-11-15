@@ -1,4 +1,4 @@
-// action/src/result.ts
+// src/result.ts
 var providers = ["stripe", "openai", "anthropic", "shopify", "twilio"];
 var statuses = ["affected", "potentially-affected", "not-affected-by-this-change", "unknown"];
 function minimize(report) {
@@ -17,7 +17,7 @@ function minimize(report) {
   if (typeof report.compatibility.catalogVersion !== "string" || !/^[a-zA-Z0-9._-]{1,80}$/.test(report.compatibility.catalogVersion)) throw Error("Invalid catalog version");
   return {
     schemaVersion: 1,
-    engineCommit: "8fa08313e65b4d313460936e606d2f3f92979c16",
+    engineCommit: "8fa08313e65b4d313460936e606d2f3f92979c16+local-quoted-commonjs",
     catalogVersion: report.compatibility.catalogVersion,
     status: complete ? "complete" : "partial",
     discoveries,

@@ -1,3 +1,21 @@
+# Action 0.1.1 — unpublished qualification candidate
+
+This proposed tree preserves the published v0.1.0 provenance below and in
+PROVENANCE.json. It adds the frozen 0.1.1-local quoted-CommonJS runtime update;
+CANDIDATE.json, BASE_PROVENANCE.json, SOURCE_MAPPING_0_1_1.json and dist/manifest.json
+identify it. No new release, complete-source reproducibility or hosted qualification
+is claimed. The 0.1.1-local provenance label is intentional, not a commit SHA.
+
+For the pending separate-consumer test, use only the reviewed examples with a new
+literal full producer SHA after founder approval; placeholders are not installable.
+Checkout uses actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1.
+The historical v0.1.0 instructions below retain their old immutable references and
+accepted scope; they are not the final 0.1.1 installation reference. Do not retarget
+v0.1.0. Manual/PR/fork claims require separate 0.1.1 evidence. Existing ownership,
+licenses, notices and security reporting records remain unchanged.
+
+## Retained v0.1.0 documentation
+
 # PatchWRK Free Scanner — GitHub Action
 
 Find supported API SDK integrations in JavaScript/TypeScript and review potential

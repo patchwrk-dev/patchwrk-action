@@ -1,4 +1,4 @@
-// action/src/index.ts
+// src/index.ts
 import { lstat, realpath, open } from "node:fs/promises";
 import { constants } from "node:fs";
 import path from "node:path";

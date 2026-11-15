@@ -1,0 +1,14 @@
+{
+  "state": "Unpublished local reconciliation; producer commit and separate-consumer qualification pending",
+  "producerRepository": "patchwrk-dev/patchwrk-action",
+  "baselineCommit": "98885abc5912553fd3b43d97c45634c9cf8b1a71",
+  "baselineTree": "124a950228cbaba7c2c0fc0749cce12f2415400c",
+  "historicalProvenanceSHA256": "627995dbe911e464fe5f69bcbcd66b8620c20b67ad74bec9d8723652c2d4ddd8",
+  "frozenArchiveSHA256": "9a6392be3e7227f7cc79d112ec753e32ca9e1203e5deb8d637bfd5890171520d",
+  "engineLabel": "8fa08313e65b4d313460936e606d2f3f92979c16+local-quoted-commonjs",
+  "sourceMapping": "CANDIDATE.json sourcePins: retained base plus quoted-CommonJS patch; no complete-source reproducibility claim",
+  "runtimeManifestSHA256": "d90dd0b9e989ac73a3252f37a00285f7a4841c7b8ca4c6cff81efda36a23aa84",
+  "candidateMetadataSHA256": "4d6eeeb2be5cd7cc5dcc7ae6fc20793106a06f32639c746453ae302e597e4ea5",
+  "checkoutPin": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+  "releasePolicy": "Preserve existing v0.1.0 tag/release; no tag or release created by preparation; consumers require a newly reviewed literal full SHA"
+}
